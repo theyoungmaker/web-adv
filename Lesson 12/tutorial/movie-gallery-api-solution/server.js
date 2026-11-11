@@ -60,7 +60,7 @@ app.put('/api/movies/:id', async (req, res) => {
         const updatedMovie = await Movie.findByIdAndUpdate(
             req.params.id,
             req.body,
-            { new: true, runValidators: true }
+            { returnDocument: 'after', runValidators: true }
         );
         if (!updatedMovie) {
             return res.status(404).json({ message: "Movie not found!" });

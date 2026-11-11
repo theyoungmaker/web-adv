@@ -58,7 +58,7 @@ app.put('/api/books/:id', async (req, res) => {
         const updatedBook = await Book.findByIdAndUpdate(
             req.params.id,
             req.body,
-            { new: true, runValidators: true }
+            { returnDocument: 'after', runValidators: true }
         );
         if (!updatedBook) {
             return res.status(404).json({ message: "Book not found!" });
