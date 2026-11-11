@@ -19,4 +19,4 @@ Your cluster is an empty filing cabinet. Let's fill a drawer by hand!
    Write a filter that shows only movies from before 2000.
    Then write one that shows only your Animation movies.
 
-Sample solution: solutions/fill-your-filing-cabinet.md
+Sample solution: Lesson 4/exercises/solution/fill-your-filing-cabinet.md
